@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="管理员后台"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:background="#3F51B5"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/et_book_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="书名"/>
+        <EditText
+            android:id="@+id/et_book_author"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="作者"/>
+        <EditText
+            android:id="@+id/et_book_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="价格"
+            android:inputType="numberDecimal"/>
+        <EditText
+            android:id="@+id/et_book_stock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="库存数量"
+            android:inputType="number"/>
+
+        <Button
+            android:id="@+id/btn_add_book"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="添加图书"/>
+
+        <Button
+            android:id="@+id/btn_view_records"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="查看所有借阅记录"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#FF9800"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="图书列表 (长按可删除)"
+        android:textColor="#FF5722"
+        android:paddingStart="16dp"/>
+
+    <ListView
+        android:id="@+id/lv_books"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"/>
+</LinearLayout>
